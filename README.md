@@ -1,5 +1,5 @@
 # zeal-academy
-Simple custom build landing page for Zeal academy
+Custom build landing page for Zeal academy
 
 ***
 
