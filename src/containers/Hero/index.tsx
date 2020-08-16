@@ -1,6 +1,6 @@
 import React from 'react';
+import { InputGroup } from '../../components';
 import { hero } from '../../images';
-import { InputGroup } from '../InputGroup';
 
 export const Hero = () => {
 	return (
@@ -13,7 +13,7 @@ export const Hero = () => {
 					Learn from the best, <br />
 					Turn your dreams into reality.
 				</h1>
-				<InputGroup />
+				<InputGroup message='Drop your email above, well get back to you right away.' />
 			</div>
 		</div>
 	);

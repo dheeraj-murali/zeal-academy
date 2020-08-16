@@ -1,12 +1,12 @@
 import React from 'react';
-import { Header } from '../../components';
-import { Hero } from '../../components/Hero';
+import { Courses, Header, Hero } from '../../containers';
 
 export const Home = () => {
 	return (
 		<>
 			<Header />
 			<Hero />
+			<Courses />
 		</>
 	);
 };
