@@ -4,7 +4,7 @@ import { hero } from '../../images';
 
 export const Hero = () => {
 	return (
-		<div
+		<section
 			className='h-screen w-screen bg-fixed bg-no-repeat bg-cover'
 			style={{ backgroundImage: `url(${hero})` }}
 		>
@@ -15,6 +15,6 @@ export const Hero = () => {
 				</h1>
 				<InputGroup message='Drop your email above, well get back to you right away.' />
 			</div>
-		</div>
+		</section>
 	);
 };
