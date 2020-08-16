@@ -1,21 +1,21 @@
 import React from 'react';
-import { hero } from '../../images';
 
-export const CourseCard = () => {
+export const CourseCard = (props: CourseCardProps) => {
+	const { course } = props;
 	return (
 		<div
-			className='rounded-lg border border-gray-400 overflow-hidden shadow-lg bg-white'
-			style={{ minWidth: '20rem' }}
+			className='min-w-full mx-4 rounded-lg border border-gray-400 overflow-hidden shadow-lg bg-white'
+			// style={{ minWidth: '24rem' }}
 		>
-			<img className='w-full' src={hero} alt='Sunset in the mountains' />
+			<img
+				className='w-full'
+				src={course.image}
+				alt='Sunset in the mountains'
+			/>
 			<div className='space-y-3 px-6 py-4'>
-				<p className='text-blue-700 text-sm'>Subject</p>
-				<div className='font-bold text-xl mb-2'>The Coldest Sunset</div>
-				<p className='text-gray-700 text-base'>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Voluptatibus quia, nulla! Maiores et perferendis eaque,
-					exercitationem praesentium nihil.
-				</p>
+				<p className='text-blue-700 text-sm'>{course.span}</p>
+				<div className='font-bold text-xl mb-2'>{course.title}</div>
+				<p className='text-gray-700 text-base'>{course.description}</p>
 			</div>
 		</div>
 	);

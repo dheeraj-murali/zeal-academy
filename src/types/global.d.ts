@@ -9,3 +9,12 @@ declare interface InputProps {
 declare interface InputGroupProps {
 	message?: string;
 }
+
+declare interface CourseCardProps {
+	course: {
+		image: string;
+		span: string;
+		title: string;
+		description: string;
+	};
+}

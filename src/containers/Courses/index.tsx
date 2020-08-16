@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { wave } from '../../images';
 import { Arrow, CourseCard } from '../../components';
+import { courseList } from '../../utils/config/courses';
 
 export const Courses = () => {
 	return (
@@ -21,9 +22,13 @@ export const Courses = () => {
 					<Arrow />
 				</div>
 				<div className='inline-flex w-screen md:w-3/5 z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6'>
-					<CourseCard />
-					<CourseCard />
-					<CourseCard />
+					<div className='inline-flex w-screen md:w-3/4 lg:w-2/4'>
+						{courseList.map((course, index) => (
+							<Fragment key={index}>
+								<CourseCard course={course} />
+							</Fragment>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>
