@@ -14,7 +14,7 @@ export const CourseCard = (props: CourseCardProps) => {
 			/>
 			<div className='space-y-3 px-6 py-4'>
 				<p className='text-blue-700 text-sm'>{course.span}</p>
-				<div className='font-bold text-xl mb-2'>{course.title}</div>
+				<div className='font-semibold text-xl mb-2'>{course.title}</div>
 				<p className='text-gray-700 text-base'>{course.description}</p>
 			</div>
 		</div>
