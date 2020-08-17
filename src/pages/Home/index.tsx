@@ -1,5 +1,5 @@
 import React from 'react';
-import { Courses, Header, Hero } from '../../containers';
+import { Courses, Header, Hero, Achievements } from '../../containers';
 
 export const Home = () => {
 	return (
@@ -7,6 +7,7 @@ export const Home = () => {
 			<Header />
 			<Hero />
 			<Courses />
+			<Achievements />
 		</>
 	);
 };
