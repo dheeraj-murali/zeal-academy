@@ -5,10 +5,10 @@ export const Counter = (props: CounterProps) => {
 
 	return (
 		<div>
-			<h3 className='text-4xl text-green-800 font-bold subpixel-antialiased'>
+			<h3 className='text-4xl text-green-700 font-bold subpixel-antialiased'>
 				{item.count}
 			</h3>
-			<p className='text-gray-600 font-semibold'>{item.label}</p>
+			<p className='text-gray-700 font-semibold'>{item.label}</p>
 		</div>
 	);
 };
