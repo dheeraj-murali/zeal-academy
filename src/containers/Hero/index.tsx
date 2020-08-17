@@ -13,7 +13,10 @@ export const Hero = () => {
 					Learn from the best, <br />
 					Turn your dreams into reality.
 				</h1>
-				<InputGroup message='Drop your email above, well get back to you right away.' />
+				<InputGroup
+					message='Drop your email above, well get back to you right away.'
+					id='join'
+				/>
 			</div>
 		</section>
 	);

@@ -4,10 +4,12 @@ declare interface ButtonProps {
 
 declare interface InputProps {
 	placeholder: string;
+	id: string;
 }
 
 declare interface InputGroupProps {
 	message?: string;
+	id: string;
 }
 
 declare interface CourseCardProps {
