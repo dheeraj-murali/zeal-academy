@@ -20,3 +20,7 @@ declare interface CourseCardProps {
 		description: string;
 	};
 }
+
+declare interface CounterProps {
+	item: { count: string; label: string };
+}
