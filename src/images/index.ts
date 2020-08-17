@@ -7,6 +7,11 @@ import banner5 from './banners/banner5.jpg';
 import banner6 from './banners/banner6.jpg';
 import hero from './hero.png';
 import wave from './wave.png';
+import ajay from './testimonials/ajay.jpg';
+import anto from './testimonials/anto.jpg';
+import haritha from './testimonials/haritha.jpg';
+import maria from './testimonials/maria.jpg';
+import sameer from './testimonials/sameer.jpg';
 
 export {
 	hero,
@@ -18,4 +23,9 @@ export {
 	banner4,
 	banner5,
 	banner6,
+	ajay,
+	anto,
+	haritha,
+	maria,
+	sameer,
 };
