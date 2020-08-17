@@ -1,6 +1,6 @@
 export { Arrow } from './Arrow';
 export { Button } from './Button';
-export { Counter } from './Counterr';
+export { Counter } from './Counter';
 export { CourseCard } from './CourseCard';
 export { Input } from './Input';
 export { InputGroup } from './InputGroup';
