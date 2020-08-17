@@ -10,7 +10,13 @@ export const CourseCard = (props: CourseCardProps) => {
 				alt={`${course.title}`}
 			/>
 			<div className='space-y-3 px-6 py-4'>
-				<span className='text-blue-700 text-sm'>{course.span}</span>
+				<abbr
+					className='text-blue-700 text-sm'
+					style={{ textDecoration: 'none' }}
+					title={course.title}
+				>
+					{course.span}
+				</abbr>
 				<h3 className='font-semibold text-xl mb-2'>{course.title}</h3>
 				<p className='text-gray-700 text-base'>{course.description}</p>
 			</div>
