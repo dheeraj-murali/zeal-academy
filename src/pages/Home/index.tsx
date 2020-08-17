@@ -1,5 +1,11 @@
 import React from 'react';
-import { Courses, Header, Hero, Achievements } from '../../containers';
+import {
+	Achievements,
+	Courses,
+	Header,
+	Hero,
+	Testimonials,
+} from '../../containers';
 
 export const Home = () => {
 	return (
@@ -8,6 +14,7 @@ export const Home = () => {
 			<Hero />
 			<Courses />
 			<Achievements />
+			<Testimonials />
 		</>
 	);
 };

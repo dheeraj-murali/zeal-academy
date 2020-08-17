@@ -24,3 +24,12 @@ declare interface CourseCardProps {
 declare interface CounterProps {
 	item: { count: string; label: string };
 }
+
+declare interface TestimonialCardProps {
+	person: {
+		name: string;
+		qualification: string;
+		message: string;
+		photo: string;
+	};
+}
