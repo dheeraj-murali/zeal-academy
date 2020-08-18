@@ -10,8 +10,8 @@ export const Achievements = () => {
 				backgroundImage: `linear-gradient(180deg, rgb(41, 216, 119) 0%, rgba(255,255,255,0) 100%`,
 			}}
 		>
-			<div className='w-3/4 text-center mx-auto my-8'>
-				<h2 className='text-2xl font-bold antialiased text-current'>
+			<div className='w-3/4 text-center mx-auto my-8 space-y-8'>
+				<h2 className='text-4xl font-bold antialiased text-current'>
 					Achievements
 				</h2>
 				<p className='text-gray-700'>
