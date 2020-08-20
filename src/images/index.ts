@@ -6,15 +6,17 @@ import banner4 from './banners/banner4.jpg';
 import banner5 from './banners/banner5.jpg';
 import banner6 from './banners/banner6.jpg';
 import banner7 from './banners/banner7.jpg';
-import hero from './hero.png';
-import wave from './wave.png';
+import hero from './hero.jpg';
+import about from './about.jpg';
 import ajay from './testimonials/ajay.jpg';
 import anto from './testimonials/anto.jpg';
 import haritha from './testimonials/haritha.jpg';
 import maria from './testimonials/maria.jpg';
 import sameer from './testimonials/sameer.jpg';
+import wave from './wave.png';
 
 export {
+	about,
 	hero,
 	wave,
 	arrow,
