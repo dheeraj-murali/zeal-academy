@@ -4,6 +4,7 @@ import { about } from '../../images';
 export const About = () => {
 	return (
 		<section
+			id='about'
 			className='min-h-screen w-screen bg-no-repeat bg-cover bg-center'
 			style={{
 				backgroundImage: `linear-gradient(180deg, rgba(41,216,119) 0%, rgba(51, 51, 51, 0.6) 50%), url(${about})`,

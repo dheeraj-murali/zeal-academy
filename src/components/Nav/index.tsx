@@ -10,7 +10,6 @@ export const Nav = () => {
 					{links.map((link, index) => (
 						<li key={index} className='float-left'>
 							<Link
-								offset='100'
 								href={link.link}
 								className='text-base hover:text-zeal'
 							>
