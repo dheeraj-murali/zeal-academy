@@ -16,9 +16,9 @@ export const Courses = () => {
 						Our Popular Courses
 					</h2>
 					<p className='text-gray-600'>
-						Elit nunc, pellentesque ante egestas. Varius diam
-						tristique a consectetur sollicitudin quam mauris
-						tincidunt tempor. In in rutrum sapien dolor viverra.
+						We offer the facility of online and classroom coaching
+						for major abroad pharmacy exams. We have a proven track
+						record and are committed to your success.
 					</p>
 					<Arrow />
 				</div>
