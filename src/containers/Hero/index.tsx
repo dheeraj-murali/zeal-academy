@@ -5,7 +5,7 @@ import { hero } from '../../images';
 export const Hero = () => {
 	return (
 		<section
-			className='h-screen w-screen bg-fixed bg-no-repeat bg-cover'
+			className='h-screen w-screen bg-fixed bg-no-repeat bg-cover bg-center'
 			style={{
 				backgroundImage: `linear-gradient(0deg, rgba(41,216,119,0.4) 0%, rgba(51, 51, 51, 0.4) 39.84%), url(${hero})`,
 			}}
