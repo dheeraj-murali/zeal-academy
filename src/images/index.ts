@@ -8,11 +8,12 @@ import banner5 from './banners/banner5.webp';
 import banner6 from './banners/banner6.webp';
 import banner7 from './banners/banner7.webp';
 import hero from './hero.webp';
-import ajay from './testimonials/ajay.jpg';
-import anto from './testimonials/anto.jpg';
-import haritha from './testimonials/haritha.jpg';
-import maria from './testimonials/maria.jpg';
-import sameer from './testimonials/sameer.jpg';
+import ajay from './testimonials/ajay.webp';
+import amal from './testimonials/amal.webp';
+import anjana from './testimonials/anjana.webp';
+import arya from './testimonials/arya.webp';
+import haritha from './testimonials/haritha.webp';
+import naina from './testimonials/naina.webp';
 import wave from './wave.webp';
 
 export {
@@ -28,8 +29,9 @@ export {
 	banner6,
 	banner7,
 	ajay,
-	anto,
+	arya,
+	amal,
 	haritha,
-	maria,
-	sameer,
+	anjana,
+	naina,
 };
