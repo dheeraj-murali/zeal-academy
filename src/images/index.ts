@@ -1,19 +1,19 @@
-import arrow from './arrow.png';
-import banner1 from './banners/banner1.jpg';
-import banner2 from './banners/banner2.jpg';
-import banner3 from './banners/banner3.jpg';
-import banner4 from './banners/banner4.jpg';
-import banner5 from './banners/banner5.jpg';
-import banner6 from './banners/banner6.jpg';
-import banner7 from './banners/banner7.jpg';
-import hero from './hero.jpg';
-import about from './about.jpg';
+import about from './about.webp';
+import arrow from './arrow.webp';
+import banner1 from './banners/banner1.webp';
+import banner2 from './banners/banner2.webp';
+import banner3 from './banners/banner3.webp';
+import banner4 from './banners/banner4.webp';
+import banner5 from './banners/banner5.webp';
+import banner6 from './banners/banner6.webp';
+import banner7 from './banners/banner7.webp';
+import hero from './hero.webp';
 import ajay from './testimonials/ajay.jpg';
 import anto from './testimonials/anto.jpg';
 import haritha from './testimonials/haritha.jpg';
 import maria from './testimonials/maria.jpg';
 import sameer from './testimonials/sameer.jpg';
-import wave from './wave.png';
+import wave from './wave.webp';
 
 export {
 	about,
