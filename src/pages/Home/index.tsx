@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+	About,
 	Achievements,
 	Courses,
 	Header,
@@ -15,6 +16,7 @@ export const Home = () => {
 			<Courses />
 			<Achievements />
 			<Testimonials />
+			<About />
 		</>
 	);
 };
