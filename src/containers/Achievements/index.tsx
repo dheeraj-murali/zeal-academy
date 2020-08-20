@@ -1,5 +1,5 @@
 import React from 'react';
-import { achievements } from '../../utils/config/achivements';
+import { achievements } from '../../utils/config/achievements';
 import { Counter } from '../../components';
 
 export const Achievements = () => {
@@ -15,10 +15,12 @@ export const Achievements = () => {
 					Achievements
 				</h2>
 				<p className='text-gray-700'>
-					Fusce ullamcorper penatibus tempor velit metus tempor
-					pharetra. Feugiat viverra pellentesque a sit tortor.
-					Consequat tincidunt dui aliquam justo elementum interdum
-					arcu.
+					Our team understands medical professionals have limited time
+					and need review courses and curriculum that leads to success
+					on board exams, licensure and advanced certification. We
+					stand ready with tools to help you achieve your goals. Our
+					team has a cent percent success record with our first batch
+					passing out in flying colors.
 				</p>
 			</div>
 			<div className='w-3/4 text-center mx-auto pt-10'>
