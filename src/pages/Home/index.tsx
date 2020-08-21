@@ -9,6 +9,7 @@ const Achievements = loadable(() => import('../../containers/Achievements'));
 const Testimonials = loadable(() => import('../../containers/Testimonials'));
 const About = loadable(() => import('../../containers/About'));
 const Team = loadable(() => import('../../containers/Team'));
+const Contact = loadable(() => import('../../containers/Contact'));
 
 export const Home = () => {
 	return (
@@ -22,6 +23,7 @@ export const Home = () => {
 			<Testimonials />
 			<About />
 			<Team />
+			<Contact />
 		</>
 	);
 };
