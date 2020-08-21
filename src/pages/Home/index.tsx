@@ -5,6 +5,7 @@ import {
 	Courses,
 	Header,
 	Hero,
+	Team,
 	Testimonials,
 } from '../../containers';
 
@@ -17,6 +18,7 @@ export const Home = () => {
 			<Achievements />
 			<Testimonials />
 			<About />
+			<Team />
 		</>
 	);
 };
