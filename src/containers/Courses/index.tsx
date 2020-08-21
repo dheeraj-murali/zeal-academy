@@ -22,7 +22,7 @@ export const Courses = () => {
 					</p>
 					<Arrow />
 				</div>
-				<div className='inline-flex w-screen md:w-3/5 z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6'>
+				<div className='inline-flex w-screen md:w-3/5 z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'>
 					<ul className='inline-flex w-screen md:w-3/4 lg:w-2/4 space-x-2 md:space-x-6'>
 						{courseList.map((course, index) => (
 							<li key={index} className='min-w-full'>

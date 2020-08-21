@@ -17,7 +17,7 @@ export const Testimonials = () => {
 					</h2>
 					<Arrow />
 				</div>
-				<div className='inline-flex w-screen z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6'>
+				<div className='inline-flex w-screen z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'>
 					<ul className='inline-flex w-screen md:w-2/4 lg:w-2/6 xl:w-1/4 space-x-2 md:space-x-10 md:ml-40'>
 						{testimonials.map((testimonial, index) => (
 							<li key={index} className='min-w-full'>
