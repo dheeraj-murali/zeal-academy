@@ -1,7 +1,7 @@
 import React from 'react';
 import { about as config } from '../../utils/config';
 
-export const About = () => {
+export default () => {
 	return (
 		<section
 			id='about'

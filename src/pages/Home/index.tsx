@@ -1,19 +1,22 @@
-import React from 'react';
-import {
-	About,
-	Achievements,
-	Courses,
-	Header,
-	Hero,
-	Team,
-	Testimonials,
-} from '../../containers';
+import React, { Suspense } from 'react';
+import loadable, { lazy } from '@loadable/component';
+import { Loader } from '../../components';
+
+const Hero = lazy(() => import('../../containers/Hero'));
+const Header = lazy(() => import('../../containers/Header'));
+const Courses = loadable(() => import('../../containers/Courses'));
+const Achievements = loadable(() => import('../../containers/Achievements'));
+const Testimonials = loadable(() => import('../../containers/Testimonials'));
+const About = loadable(() => import('../../containers/About'));
+const Team = loadable(() => import('../../containers/Team'));
 
 export const Home = () => {
 	return (
 		<>
-			<Header />
-			<Hero />
+			<Suspense fallback={<Loader />}>
+				<Header />
+				<Hero />
+			</Suspense>
 			<Courses />
 			<Achievements />
 			<Testimonials />

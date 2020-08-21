@@ -4,6 +4,7 @@ export { Counter } from './Counter';
 export { CourseCard } from './CourseCard';
 export { Input } from './Input';
 export { InputGroup } from './InputGroup';
+export { Loader } from './Loader';
 export { Logo } from './Logo';
 export { Nav } from './Nav';
 export { TeamCard } from './TeamCard';

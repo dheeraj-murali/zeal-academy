@@ -2,7 +2,7 @@ import React from 'react';
 import { Arrow, CourseCard } from '../../components';
 import { course as config } from '../../utils/config';
 
-export const Courses = () => {
+export default () => {
 	return (
 		<section
 			id='course'

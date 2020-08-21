@@ -2,7 +2,7 @@ import React from 'react';
 import { Counter } from '../../components';
 import { achievement as config } from '../../utils/config';
 
-export const Achievements = () => {
+export default () => {
 	return (
 		<section
 			className='flex flex-col justify-center w-screen bg-no-repeat bg-cover space-y-10 py-20'

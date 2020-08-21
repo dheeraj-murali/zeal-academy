@@ -2,7 +2,7 @@ import React from 'react';
 import { InputGroup } from '../../components';
 import { hero as config } from '../../utils/config';
 
-export const Hero = () => {
+export default function () {
 	return (
 		<section
 			className='h-screen w-screen bg-fixed bg-no-repeat bg-cover bg-center'
@@ -22,4 +22,4 @@ export const Hero = () => {
 			</div>
 		</section>
 	);
-};
+}

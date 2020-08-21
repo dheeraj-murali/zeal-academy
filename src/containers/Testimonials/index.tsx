@@ -2,7 +2,7 @@ import React from 'react';
 import { Arrow, TestimonialCard } from '../../components';
 import { testimonial as config } from '../../utils/config';
 
-export const Testimonials = () => {
+export default () => {
 	return (
 		<section
 			id='course'
