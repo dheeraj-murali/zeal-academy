@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Input = (props: InputProps) => {
-	const { placeholder, id } = props;
+	const { placeholder, id, message, type } = props;
 
 	return (
 		<>
@@ -9,11 +9,17 @@ export const Input = (props: InputProps) => {
 				{id}
 			</label>
 			<input
+				name={id}
 				id={id}
-				type='text'
-				className='w-full h-12 p-2 pl-4 rounded-lg'
+				type={type}
+				className='appearance-none w-full h-12 p-2 pl-4 rounded-lg'
 				placeholder={placeholder}
 			/>
+			{message && <p className='mx-3 font-light text-white'>{message}</p>}
 		</>
 	);
+};
+
+Input.defaultProps = {
+	type: 'text',
 };

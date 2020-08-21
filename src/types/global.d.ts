@@ -13,6 +13,8 @@ declare interface ButtonProps {
 declare interface InputProps {
 	placeholder: string;
 	id: string;
+	message?: string;
+	type?: string;
 }
 
 declare interface InputGroupProps {
