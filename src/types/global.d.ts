@@ -33,3 +33,14 @@ declare interface TestimonialCardProps {
 		photo: string;
 	};
 }
+
+declare interface TeamCardProps {
+	person: {
+		name: string;
+		qualification: string;
+		role: string;
+		highlight: boolean;
+		message: string;
+		photo: string;
+	};
+}

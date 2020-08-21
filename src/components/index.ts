@@ -6,4 +6,5 @@ export { Input } from './Input';
 export { InputGroup } from './InputGroup';
 export { Logo } from './Logo';
 export { Nav } from './Nav';
+export { TeamCard } from './TeamCard';
 export { TestimonialCard } from './TestimonialCard';
