@@ -1,8 +1,9 @@
 import React from 'react';
-import { links } from '../../utils/config/navLinks';
 import Link from 'react-anchor-link-smooth-scroll';
 
-export const Nav = () => {
+export const Nav = (props: NavProps) => {
+	const { links, phone } = props;
+
 	return (
 		<>
 			<nav className='py-2 px-2'>
@@ -19,12 +20,14 @@ export const Nav = () => {
 					))}
 				</ul>
 			</nav>
-			<a
-				href='tel:+91988765432'
-				className='py-2 px-2 hidden md:block hover:text-zeal'
-			>
-				Questions? &nbsp; Call us at +91 988765432
-			</a>
+			{phone && (
+				<a
+					href={`tel:${phone}`}
+					className='py-2 px-2 hidden md:block hover:text-zeal'
+				>
+					Questions? &nbsp; Call us at {phone}
+				</a>
+			)}
 		</>
 	);
 };

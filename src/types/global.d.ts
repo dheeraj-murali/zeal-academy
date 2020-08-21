@@ -1,3 +1,11 @@
+declare interface NavProps {
+	links: {
+		link: string;
+		text: string;
+	}[];
+	phone?: string;
+}
+
 declare interface ButtonProps {
 	text: string;
 }
