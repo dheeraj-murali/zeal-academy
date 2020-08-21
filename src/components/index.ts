@@ -1,3 +1,4 @@
+export { Alert } from './Alert';
 export { Arrow } from './Arrow';
 export { Button } from './Button';
 export { Counter } from './Counter';
