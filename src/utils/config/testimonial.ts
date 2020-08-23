@@ -3,7 +3,7 @@ import { ajay, arya, naina, anjana, amal, haritha, wave } from '../../images';
 export const testimonial = {
 	title: `What our students are saying`,
 	text: ``,
-	background: wave,
+	background: `url(${wave})`,
 	testimonials: [
 		{
 			name: 'Ajay Manimala',
