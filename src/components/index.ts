@@ -9,6 +9,7 @@ export { InputGroup } from './InputGroup';
 export { Loader } from './Loader';
 export { Logo } from './Logo';
 export { Nav } from './Nav';
+export { Social } from './Social';
 export { TeamCard } from './TeamCard';
 export { TestimonialCard } from './TestimonialCard';
 export { Textarea } from './Textarea';
