@@ -12,7 +12,7 @@ import {
 export const team = {
 	title: `Meet the team`,
 	text: ``,
-	background: wave,
+	background: `url(${wave})`,
 	members: [
 		{
 			name: 'Dr Anphil Thomas',
