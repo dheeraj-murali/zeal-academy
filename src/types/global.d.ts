@@ -61,3 +61,8 @@ declare interface ContactListProps {
 		contacts: string[];
 	}[];
 }
+
+declare interface SocialProps {
+	item: 'facebook' | 'twitter' | 'instagram' | 'whatsApp' | 'linkedIn';
+	link: string;
+}

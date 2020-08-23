@@ -1,5 +1,5 @@
-import React, { Suspense } from 'react';
 import loadable, { lazy } from '@loadable/component';
+import React, { Suspense } from 'react';
 import { Loader } from '../../components';
 
 const Hero = lazy(() => import('../../containers/Hero'));
@@ -10,6 +10,7 @@ const Testimonials = loadable(() => import('../../containers/Testimonials'));
 const About = loadable(() => import('../../containers/About'));
 const Team = loadable(() => import('../../containers/Team'));
 const Contact = loadable(() => import('../../containers/Contact'));
+const Footer = loadable(() => import('../../containers/Footer'));
 
 export const Home = () => {
 	return (
@@ -24,6 +25,7 @@ export const Home = () => {
 			<About />
 			<Team />
 			<Contact />
+			<Footer />
 		</>
 	);
 };
