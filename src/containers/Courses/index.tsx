@@ -7,7 +7,7 @@ export default () => {
 		<section
 			id='course'
 			className='flex flex-col justify-center content-center w-screen bg-scroll bg-no-repeat bg-contain bg-bottom'
-			style={{ backgroundImage: `url(${config.background})` }}
+			style={{ backgroundImage: `${config.background}` }}
 		>
 			<div className='flex flex-wrap my-10 py-10'>
 				<div className='flex flex-col justify-center text-center md:text-left space-y-8 w-full md:w-2/5 pl-8 md:pl-24 pr-8 lg:px-24'>

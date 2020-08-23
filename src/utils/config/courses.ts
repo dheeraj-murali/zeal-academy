@@ -13,7 +13,7 @@ export const course = {
 	text: `We offer the facility of online and classroom coaching
 	for major abroad pharmacy exams. We have a proven track
 	record and are committed to your success.`,
-	background: wave,
+	background: `url(${wave})`,
 	courseList: [
 		{
 			image: banner1,
