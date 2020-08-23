@@ -54,3 +54,10 @@ declare interface TeamCardProps {
 		photo: string;
 	};
 }
+
+declare interface ContactListProps {
+	contactList: {
+		type: 'mail' | 'tel';
+		contacts: string[];
+	}[];
+}
