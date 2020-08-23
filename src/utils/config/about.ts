@@ -12,5 +12,5 @@ export const about = {
     opportunities that helps students recognize the accurate
     path of accomplishment that helps as the springboard for
     their future career.`,
-	background: aboutImage,
+	background: `linear-gradient(180deg, rgba(41,216,119) 0%, rgba(51, 51, 51, 0.6) 50%), url(${aboutImage})`,
 };
