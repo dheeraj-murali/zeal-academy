@@ -1,29 +1,30 @@
 import React from 'react';
-import { Input, Textarea, Button } from '../../components';
+import { Input, Textarea, Button, ContactList } from '../../components';
+import { contact as config } from '../../utils/config';
 
 export default () => {
 	return (
 		<section
 			id='contact'
-			className='flex flex-col justify-center min-h-screen w-screen bg-no-repeat bg-cover space-y-10 py-20'
+			className='flex flex-col justify-center w-screen bg-no-repeat bg-cover space-y-10 py-20'
 			style={{
-				backgroundImage: `linear-gradient(180deg, rgb(41, 216, 119) 0%, rgb(51,51,51) 100%`,
+				backgroundImage: `${config.background}`,
 			}}
 		>
 			<div className='flex flex-wrap px-10 md:px-20 lg:px-32'>
-				<div className='flex flex-col justify-center text-center md:text-left space-y-8 w-full md:w-1/2 mx-auto mb-8 md:mb-0'>
+				<div className='flex flex-col flex-start space-y-24 text-center md:text-left w-full md:w-1/2 mx-auto mb-8 md:mb-0'>
 					<div>
-						<h2 className='text-4xl font-bold antialiased text-white'>
-							Let's talk
+						<h2 className='text-5xl font-bold antialiased text-white'>
+							{config.title}
 						</h2>
-						<p className='text-gray-100'>
-							Ask us anything or just say Hi...
-						</p>
+						<p className='text-gray-100'>{config.text}</p>
 					</div>
-					<div></div>
+					<div>
+						<ContactList contactList={config.contactList} />
+					</div>
 				</div>
 
-				<div className='flex flex-col justify-center text-center md:text-left space-y-8 w-full md:w-1/2 mx-auto'>
+				<div className='flex flex-col flex-start text-center md:text-left space-y-8 w-full md:w-1/2 mx-auto'>
 					<form className='w-full max-w-lg'>
 						<div className='w-full mb-6'>
 							<Input
