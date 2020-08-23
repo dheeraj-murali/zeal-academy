@@ -6,6 +6,7 @@ export const achievement = {
 	stand ready with tools to help you achieve your goals. Our
 	team has a cent percent success record with our first batch
 	passing out in flying colors.`,
+	background: `linear-gradient(180deg, rgb(41, 216, 119) 0%, rgba(255,255,255,0) 100%`,
 	achievements: [
 		{
 			label: 'results',

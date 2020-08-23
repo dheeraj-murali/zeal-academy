@@ -7,7 +7,7 @@ export default () => {
 		<section
 			className='flex flex-col justify-center w-screen bg-no-repeat bg-cover space-y-10 py-20'
 			style={{
-				backgroundImage: `linear-gradient(180deg, rgb(41, 216, 119) 0%, rgba(255,255,255,0) 100%`,
+				backgroundImage: `${config.background}`,
 			}}
 		>
 			<div className='w-3/4 text-center mx-auto my-8 space-y-8'>
