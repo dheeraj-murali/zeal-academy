@@ -14,6 +14,9 @@ export default () => {
 					<h2 className='text-4xl font-bold antialiased text-current'>
 						{config.title}
 					</h2>
+					{config.text && (
+						<p className='text-gray-600'>{config.text}</p>
+					)}
 					<Arrow />
 				</div>
 				<div className='inline-flex w-screen z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'>

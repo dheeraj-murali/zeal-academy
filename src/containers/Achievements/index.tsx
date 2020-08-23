@@ -14,7 +14,7 @@ export default () => {
 				<h2 className='text-4xl font-bold antialiased text-current'>
 					{config.title}
 				</h2>
-				<p className='text-gray-700'>{config.text}</p>
+				{config.text && <p className='text-gray-700'>{config.text}</p>}
 			</div>
 			<div className='w-3/4 text-center mx-auto pt-10'>
 				<ul className='flex flex-wrap item-center justify-between w-full'>

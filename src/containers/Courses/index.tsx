@@ -15,7 +15,9 @@ export default () => {
 						{config.title}
 					</h2>
 
-					<p className='text-gray-600'>{config.text}</p>
+					{config.text && (
+						<p className='text-gray-600'>{config.text}</p>
+					)}
 					<Arrow />
 				</div>
 
