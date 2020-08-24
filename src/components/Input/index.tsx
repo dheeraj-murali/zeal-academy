@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Input = (props: InputProps) => {
-	const { placeholder, id, message, type } = props;
+	const { placeholder, id, message, type, value, onChangeFn } = props;
 
 	return (
 		<>
@@ -9,6 +9,8 @@ export const Input = (props: InputProps) => {
 				{id}
 			</label>
 			<input
+				value={value}
+				onChange={(e) => onChangeFn(e.target.value)}
 				name={id}
 				id={id}
 				type={type}

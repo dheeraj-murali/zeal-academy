@@ -1,6 +1,7 @@
 export { Alert } from './Alert';
 export { Arrow } from './Arrow';
 export { Button } from './Button';
+export { ContactForm } from './ContactForm';
 export { ContactList } from './ContactList';
 export { Counter } from './Counter';
 export { CourseCard } from './CourseCard';
