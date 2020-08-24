@@ -10,6 +10,7 @@ export const Textarea = (props: InputProps) => {
 			</label>
 			<textarea
 				id={id}
+				name={id}
 				rows={8}
 				className='resize-y w-full p-2 pl-4 rounded-lg leading-tight'
 				placeholder={placeholder}
