@@ -3,28 +3,17 @@ import { Input } from '../Input';
 import { Textarea } from '../Textarea';
 import { Button } from '../Button';
 
-export const ContactForm = (props: ContactFormProps) => {
-	const { onSubmitFn } = props;
-
+export const ContactForm = () => {
 	const [email, setEmail] = useState('');
 	const [name, setName] = useState('');
 	const [message, setMessage] = useState('');
 
-	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-		onSubmitFn(e, {
-			email,
-			name,
-			message,
-		});
-	};
-
 	return (
 		<div className='flex flex-col flex-start text-center md:text-left space-y-8 w-full md:w-1/2 mx-auto'>
-			<form
-				className='w-full max-w-lg'
-				data-netlify='true'
-				onSubmit={handleSubmit}
-			>
+			<form className='w-full max-w-lg'>
+				{/* The bellow line is required for netlify forms */}
+				<input type='hidden' name='form-name' value='contact' />
+
 				<div className='w-full mb-6'>
 					<Input
 						placeholder='Your email address'

@@ -68,10 +68,3 @@ declare interface SocialProps {
 	item: 'facebook' | 'twitter' | 'instagram' | 'whatsApp' | 'linkedIn';
 	link: string;
 }
-
-declare interface ContactFormProps {
-	onSubmitFn: (
-		event: React.FormEvent<HTMLFormElement>,
-		data: { email: string; name: string; message: string }
-	) => void;
-}

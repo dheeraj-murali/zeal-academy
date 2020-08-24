@@ -3,21 +3,6 @@ import { ContactForm, ContactList } from '../../components';
 import { contact as config } from '../../utils/config';
 
 export default () => {
-	const handleSubmit = (
-		e: React.FormEvent<HTMLFormElement>,
-		data: { email: string; name: string; message: string }
-	) => {
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: JSON.stringify({ 'form-name': 'contact', ...data }),
-		})
-			.then(() => alert('Success!'))
-			.catch((error) => alert(error));
-
-		e.preventDefault();
-	};
-
 	return (
 		<section
 			id='contact'
@@ -39,7 +24,7 @@ export default () => {
 					</div>
 				</div>
 
-				<ContactForm onSubmitFn={handleSubmit} />
+				<ContactForm />
 			</div>
 		</section>
 	);
