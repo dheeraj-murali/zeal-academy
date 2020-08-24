@@ -20,11 +20,7 @@ export const ContactForm = (props: ContactFormProps) => {
 
 	return (
 		<div className='flex flex-col flex-start text-center md:text-left space-y-8 w-full md:w-1/2 mx-auto'>
-			<form
-				className='w-full max-w-lg'
-				data-netlify='true'
-				onSubmit={handleSubmit}
-			>
+			<form className='w-full max-w-lg' onSubmit={handleSubmit}>
 				<div className='w-full mb-6'>
 					<Input
 						placeholder='Your email address'

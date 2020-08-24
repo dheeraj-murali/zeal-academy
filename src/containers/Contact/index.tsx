@@ -2,6 +2,15 @@ import React from 'react';
 import { ContactForm, ContactList } from '../../components';
 import { contact as config } from '../../utils/config';
 
+const encode = (data: { [key: string]: string }) => {
+	return Object.keys(data)
+		.map(
+			(key) =>
+				encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+		)
+		.join('&');
+};
+
 export default () => {
 	const handleSubmit = (
 		e: React.FormEvent<HTMLFormElement>,
@@ -10,7 +19,7 @@ export default () => {
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: JSON.stringify({ 'form-name': 'contact', ...data }),
+			body: encode({ 'form-name': 'contact', ...data }),
 		})
 			.then(() => alert('Success!'))
 			.catch((error) => alert(error));
