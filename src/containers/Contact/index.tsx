@@ -1,8 +1,23 @@
 import React from 'react';
-import { Input, Textarea, Button, ContactList } from '../../components';
+import { ContactForm, ContactList } from '../../components';
 import { contact as config } from '../../utils/config';
 
 export default () => {
+	const handleSubmit = (
+		e: React.FormEvent<HTMLFormElement>,
+		data: { email: string; name: string; message: string }
+	) => {
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: JSON.stringify({ 'form-name': 'contact', ...data }),
+		})
+			.then(() => alert('Success!'))
+			.catch((error) => alert(error));
+
+		e.preventDefault();
+	};
+
 	return (
 		<section
 			id='contact'
@@ -24,30 +39,7 @@ export default () => {
 					</div>
 				</div>
 
-				<div className='flex flex-col flex-start text-center md:text-left space-y-8 w-full md:w-1/2 mx-auto'>
-					<form className='w-full max-w-lg'>
-						<div className='w-full mb-6'>
-							<Input
-								placeholder='Your email address'
-								id='email'
-								type='email'
-								message='We’ll never share your email with anyone.'
-							/>
-						</div>
-
-						<div className='w-full mb-6'>
-							<Input placeholder='Your name' id='name' />
-						</div>
-
-						<div className='w-full mb-6'>
-							<Textarea id='message' placeholder='Message' />
-						</div>
-
-						<div className='flex justify-center w-full mb-6'>
-							<Button text='Submit' />
-						</div>
-					</form>
-				</div>
+				<ContactForm onSubmitFn={handleSubmit} />
 			</div>
 		</section>
 	);

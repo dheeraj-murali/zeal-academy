@@ -15,6 +15,8 @@ declare interface InputProps {
 	id: string;
 	message?: string;
 	type?: string;
+	value: string;
+	onChangeFn: (string) => void;
 }
 
 declare interface InputGroupProps {
@@ -65,4 +67,11 @@ declare interface ContactListProps {
 declare interface SocialProps {
 	item: 'facebook' | 'twitter' | 'instagram' | 'whatsApp' | 'linkedIn';
 	link: string;
+}
+
+declare interface ContactFormProps {
+	onSubmitFn: (
+		event: React.FormEvent<HTMLFormElement>,
+		data: { email: string; name: string; message: string }
+	) => void;
 }
