@@ -9,14 +9,11 @@ export const contact: {
 	contactList: [
 		{
 			type: 'mail',
-			contacts: [
-				'info@upskiinternational.com',
-				'upskiinternational@gmail.com',
-			],
+			contacts: ['info@fakemail.com', 'fakemail@gmail.com'],
 		},
 		{
 			type: 'tel',
-			contacts: ['0484-4870696', '+91-9544500704'],
+			contacts: ['0473 9563728', '+91 9846251481'],
 		},
 	],
 };

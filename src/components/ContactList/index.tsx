@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 export const ContactList = (props: ContactListProps) => {
@@ -7,31 +7,42 @@ export const ContactList = (props: ContactListProps) => {
 	return (
 		<ul className='flex flex-col space-y-8 text-white'>
 			{contactList.map((contactItem, index) => (
-				<li className='inline-flex items-center space-x-4'>
+				<li
+					key={`${index}-contact-list`}
+					className='inline-flex items-center'
+				>
 					{contactItem.type === 'mail' && (
-						<Fragment key={index}>
-							<FaEnvelope className='text-4xl' />
-							<div className='flex flex-col space-y-1'>
+						<div className='flex flex-col md:flex-row items-center w-full'>
+							<FaEnvelope className='text-4xl m-3' />
+							<div className='flex flex-col'>
 								{contactItem.contacts.map((contact, key) => (
-									<a href={`mailto: ${contact}`} key={key}>
+									<a
+										className='p-3'
+										href={`mailto:${contact}`}
+										key={`${key}-mail`}
+									>
 										{contact}
 									</a>
 								))}
 							</div>
-						</Fragment>
+						</div>
 					)}
 
 					{contactItem.type === 'tel' && (
-						<Fragment key={index}>
-							<FaPhoneAlt className='text-4xl' />
-							<div className='flex flex-col space-y-1'>
+						<div className='flex flex-col md:flex-row items-center w-full'>
+							<FaPhoneAlt className='text-4xl m-3' />
+							<div className='flex flex-col'>
 								{contactItem.contacts.map((contact, key) => (
-									<a href={`tel: ${contact}`} key={key}>
+									<a
+										className='p-3'
+										href={`tel:${contact}`}
+										key={`${key}-phone`}
+									>
 										{contact}
 									</a>
 								))}
 							</div>
-						</Fragment>
+						</div>
 					)}
 				</li>
 			))}

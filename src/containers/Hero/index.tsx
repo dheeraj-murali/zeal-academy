@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputGroup } from '../../components';
+import Link from 'react-anchor-link-smooth-scroll';
 import { hero as config } from '../../utils/config';
 
 export default function () {
@@ -15,10 +15,14 @@ export default function () {
 					{config.title}
 				</h1>
 
-				<InputGroup
-					message='Drop your email above, well get back to you right away.'
-					id='join'
-				/>
+				<div>
+					<Link
+						href='#course'
+						className='inline-flex items-center h-12 bg-zeal hover:bg-green-500 py-2 px-3 text-white font-medium border border-solid rounded-lg shadow whitespace-no-wrap'
+					>
+						Click here to find out more
+					</Link>
+				</div>
 			</div>
 		</section>
 	);

@@ -15,23 +15,23 @@ export const footer: {
 	socials: [
 		{
 			item: 'facebook',
-			link: '',
+			link: '#',
 		},
 		{
 			item: 'instagram',
-			link: '',
+			link: '#',
 		},
 		{
 			item: 'linkedIn',
-			link: '',
+			link: '#',
 		},
 		{
 			item: 'twitter',
-			link: '',
+			link: '#',
 		},
 		{
 			item: 'whatsApp',
-			link: '',
+			link: '#',
 		},
 	],
 };

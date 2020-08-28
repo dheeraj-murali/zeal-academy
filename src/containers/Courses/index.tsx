@@ -1,8 +1,11 @@
-import React from 'react';
-import { Arrow, CourseCard } from '../../components';
+import React, { useRef } from 'react';
+import { Arrow, CourseCard, Scroll } from '../../components';
 import { course as config } from '../../utils/config';
+import { scroll } from '../../utils/helpers/scroll';
 
 export default () => {
+	const container = useRef<HTMLDivElement>(null!);
+
 	return (
 		<section
 			id='course'
@@ -21,15 +24,23 @@ export default () => {
 					<Arrow />
 				</div>
 
-				<div className='inline-flex w-screen md:w-3/5 z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'>
+				<div
+					ref={container}
+					className='inline-flex w-screen md:w-3/5 z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'
+				>
 					<ul className='inline-flex w-screen md:w-3/4 lg:w-2/4 space-x-2 md:space-x-6'>
 						{config.courseList.map((course, index) => (
-							<li key={index} className='min-w-full'>
+							<li key={`${index}-course`} className='min-w-full'>
 								<CourseCard course={course} />
 							</li>
 						))}
 					</ul>
 				</div>
+
+				<Scroll
+					leftClickFn={() => scroll(container, 450, 'l')}
+					rightClickFn={() => scroll(container, 450, 'r')}
+				/>
 			</div>
 		</section>
 	);

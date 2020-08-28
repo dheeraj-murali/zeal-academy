@@ -1,5 +1,5 @@
 export const navLinks = {
-	phone: `+91 988765432`,
+	phone: `+91 12985 01834`,
 	links: [
 		{
 			link: '#about',

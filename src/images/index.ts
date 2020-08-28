@@ -6,6 +6,7 @@ import banner5 from './banners/banner5.jpg';
 import banner6 from './banners/banner6.jpg';
 import banner7 from './banners/banner7.jpg';
 import anjali from './team/anjali.jpg';
+import aswathi from './team/aswathi.jpg';
 import anphil from './team/anphil.jpg';
 import anu from './team/anu.jpg';
 import christeena from './team/christeena.jpg';
@@ -42,6 +43,7 @@ export {
 	anjana,
 	naina,
 	anjali,
+	aswathi,
 	anphil,
 	anu,
 	christeena,

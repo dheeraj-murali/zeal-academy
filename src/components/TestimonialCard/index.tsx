@@ -16,6 +16,7 @@ export const TestimonialCard = (props: TestimonialCardProps) => {
 					<div className='text-gray-600 font-light'>
 						{person.qualification}
 					</div>
+					<div className='text-zeal text-sm'>{person.job}</div>
 				</div>
 			</div>
 			<blockquote className='text-left text-gray-800 font-light'>

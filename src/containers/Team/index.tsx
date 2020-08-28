@@ -1,8 +1,11 @@
-import React from 'react';
-import { Arrow, TeamCard } from '../../components';
+import React, { useRef } from 'react';
+import { Arrow, Scroll, TeamCard } from '../../components';
 import { team as config } from '../../utils/config/team';
+import { scroll } from '../../utils/helpers/scroll';
 
 export default () => {
+	const container = useRef<HTMLDivElement>(null!);
+
 	return (
 		<section
 			id='course'
@@ -19,20 +22,25 @@ export default () => {
 					)}
 					<Arrow />
 				</div>
-				<div className='inline-flex w-screen z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'>
+				<div
+					ref={container}
+					className='inline-flex w-screen z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'
+				>
 					<ul className='inline-flex w-screen md:w-3/6 lg:w-1/4 space-x-2 md:space-x-10 md:ml-40'>
 						{config.members.map((member, index) => (
-							<>
-								<li
-									key={`${index}`}
-									className='min-w-full space-y-8'
-								>
-									<TeamCard person={member} />
-								</li>
-							</>
+							<li
+								key={`${index}-team`}
+								className='min-w-full space-y-8'
+							>
+								<TeamCard person={member} />
+							</li>
 						))}
 					</ul>
 				</div>
+				<Scroll
+					leftClickFn={() => scroll(container, 250, 'l')}
+					rightClickFn={() => scroll(container, 250, 'r')}
+				/>
 			</div>
 		</section>
 	);

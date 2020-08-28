@@ -1,7 +1,15 @@
 import React from 'react';
 
 export const Input = (props: InputProps) => {
-	const { placeholder, id, message, type, value, onChangeFn } = props;
+	const {
+		placeholder,
+		id,
+		message,
+		type,
+		value,
+		onChangeFn,
+		onBlurFn,
+	} = props;
 
 	return (
 		<>
@@ -10,14 +18,16 @@ export const Input = (props: InputProps) => {
 			</label>
 			<input
 				value={value}
-				onChange={(e) => onChangeFn(e.target.value)}
+				onChange={(e) => onChangeFn(e)}
+				onBlur={(e) => onBlurFn && onBlurFn(e)}
 				name={id}
 				id={id}
 				type={type}
-				className='appearance-none w-full h-12 p-2 pl-4 rounded-lg'
+				className={`appearance-none w-full h-12 p-2 pl-4 rounded-lg`}
 				placeholder={placeholder}
+				maxLength={126}
 			/>
-			{message && <p className='mx-3 font-light text-white'>{message}</p>}
+			<p className='mx-3 font-light text-white'>{message}</p>
 		</>
 	);
 };

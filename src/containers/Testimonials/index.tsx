@@ -1,8 +1,11 @@
-import React from 'react';
-import { Arrow, TestimonialCard } from '../../components';
+import React, { useRef } from 'react';
+import { Arrow, TestimonialCard, Scroll } from '../../components';
 import { testimonial as config } from '../../utils/config';
+import { scroll } from '../../utils/helpers/scroll';
 
 export default () => {
+	const container = useRef<HTMLDivElement>(null!);
+
 	return (
 		<section
 			id='course'
@@ -19,15 +22,25 @@ export default () => {
 					)}
 					<Arrow />
 				</div>
-				<div className='inline-flex w-screen z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'>
-					<ul className='inline-flex w-screen md:w-2/4 lg:w-2/6 xl:w-1/4 space-x-2 md:space-x-10 md:ml-40'>
+				<div
+					ref={container}
+					className='inline-flex w-screen z-10 space-x-8 overflow-x-scroll overscroll-x-contain p-6 no-scroll-bar'
+				>
+					<ul className='inline-flex w-screen md:w-2/4 lg:w-2/6 space-x-2 md:space-x-10 md:ml-40'>
 						{config.testimonials.map((testimonial, index) => (
-							<li key={index} className='min-w-full'>
+							<li
+								key={`${index}-testimonial`}
+								className='min-w-full'
+							>
 								<TestimonialCard person={testimonial} />
 							</li>
 						))}
 					</ul>
 				</div>
+				<Scroll
+					leftClickFn={() => scroll(container, 250, 'l')}
+					rightClickFn={() => scroll(container, 250, 'r')}
+				/>
 			</div>
 		</section>
 	);

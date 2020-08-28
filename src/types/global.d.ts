@@ -8,6 +8,8 @@ declare interface NavProps {
 
 declare interface ButtonProps {
 	text: string;
+	isDisabled?: boolean;
+	loader?: boolean;
 }
 
 declare interface InputProps {
@@ -16,7 +18,8 @@ declare interface InputProps {
 	message?: string;
 	type?: string;
 	value: string;
-	onChangeFn: (string) => void;
+	onChangeFn: CallableFunction;
+	onBlurFn?: CallableFunction;
 }
 
 declare interface InputGroupProps {
@@ -41,6 +44,7 @@ declare interface TestimonialCardProps {
 	person: {
 		name: string;
 		qualification: string;
+		job: string;
 		message: string;
 		photo: string;
 	};
@@ -51,7 +55,7 @@ declare interface TeamCardProps {
 		name: string;
 		qualification: string;
 		role: string;
-		highlight: boolean;
+		highlight?: boolean;
 		message: string;
 		photo: string;
 	};
@@ -67,4 +71,15 @@ declare interface ContactListProps {
 declare interface SocialProps {
 	item: 'facebook' | 'twitter' | 'instagram' | 'whatsApp' | 'linkedIn';
 	link: string;
+}
+
+declare interface ContactFormData {
+	email: string;
+	name: string;
+	message: string;
+}
+
+declare interface ScrollProps {
+	leftClickFn: () => void;
+	rightClickFn: () => void;
 }

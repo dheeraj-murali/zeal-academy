@@ -12,7 +12,7 @@ export default () => {
 			}}
 		>
 			<div className='flex flex-wrap px-10 md:px-20 lg:px-32'>
-				<div className='flex flex-col flex-start space-y-24 text-center md:text-left w-full md:w-1/2 mx-auto mb-8 md:mb-0'>
+				<div className='flex flex-col flex-start space-y-24 text-center md:text-left w-full md:w-1/2 mx-auto mb-16 md:mb-0'>
 					<div>
 						<h2 className='text-5xl font-bold antialiased text-white'>
 							{config.title}

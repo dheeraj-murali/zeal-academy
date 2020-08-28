@@ -1,6 +1,6 @@
 import loadable, { lazy } from '@loadable/component';
 import React, { Suspense } from 'react';
-import { Loader } from '../../components';
+import { Loader, Alert } from '../../components';
 
 const Hero = lazy(() => import('../../containers/Hero'));
 const Header = lazy(() => import('../../containers/Header'));
@@ -18,14 +18,15 @@ export const Home = () => {
 			<Suspense fallback={<Loader />}>
 				<Header />
 				<Hero />
+				<Courses />
+				<Achievements />
+				<Testimonials />
+				<About />
+				<Team />
+				<Contact />
+				<Footer />
 			</Suspense>
-			<Courses />
-			<Achievements />
-			<Testimonials />
-			<About />
-			<Team />
-			<Contact />
-			<Footer />
+			<Alert />
 		</>
 	);
 };

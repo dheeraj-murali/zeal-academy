@@ -10,7 +10,7 @@ export const Nav = (props: NavProps) => {
 			<nav className='py-2 px-2'>
 				<ul className='space-x-2 md:space-x-6'>
 					{links.map((link, index) => (
-						<li key={index} className='float-left'>
+						<li key={`${index}-nav`} className='float-left'>
 							<Link
 								href={link.link}
 								className='text-base hover:text-zeal'

@@ -1,5 +1,6 @@
 import {
 	anjali,
+	aswathi,
 	anphil,
 	anu,
 	christeena,
@@ -54,13 +55,14 @@ export const team = {
 			message: `With a Pharm.D degree from Rajiv Gandhi University, Bengaluru in 2017. She has successfully cleared KAPS in 2019.`,
 			photo: christeena,
 		},
-		// {
-		// 	name: 'Dr. Aswathi George',
-		// 	qualification: `Pharm D`,
-		// 	role: 'Faculty',
-		// 	message: `Pharm.D degree from Rajiv Gandhi University, Bengaluru in 2017. She has successfully cleared KAPS in 2019. She has over a year of experience as a Clinical Pharmacist in a reputed hospital in Kerala.`,
-		// 	photo: ,
-		// },
+		{
+			name: 'Dr. Aswathi George',
+			qualification: `Pharm D`,
+			role: 'Faculty',
+			highlight: false,
+			message: `Pharm.D degree from Rajiv Gandhi University, Bengaluru in 2017. She has successfully cleared KAPS in 2019. She has over a year of experience as a Clinical Pharmacist in a reputed hospital in Kerala.`,
+			photo: aswathi,
+		},
 		{
 			name: 'Ms. Jeeva Kletus',
 			qualification: ``,

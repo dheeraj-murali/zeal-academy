@@ -32,7 +32,7 @@ export default () => {
 						{config.socials.map((social, index) =>
 							social.link ? (
 								<li
-									key={index}
+									key={`${index}-social`}
 									className='text-3xl text-white p-5 '
 								>
 									<Social

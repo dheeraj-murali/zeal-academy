@@ -5,7 +5,7 @@ export const TeamCard = (props: TeamCardProps) => {
 
 	return (
 		<div
-			className={`flex flex-col items-center h-full bg-white rounded-lg overflow-hidden shadow-lg p-4 space-y-4 mx-4 border`}
+			className={`flex flex-col items-center h-full bg-white rounded-lg overflow-hidden shadow-lg p-4 space-y-4 mr-4 border`}
 		>
 			<img
 				className='h-32 w-32 rounded-full object-cover shadow'
